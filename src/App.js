@@ -1,24 +1,21 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import Home from './Pages/Home';
-import NavigationBar from './Components/NavigationBar';
-import {BrowserRouter , Switch , Route} from 'react-router-dom';
+import Notfound404 from './Pages/Notfound404';
+import MainLayout from './layout/MainLayout';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 class App extends Component {
   render() {
 
     return (
       <React.Fragment>
         <BrowserRouter>
-           <div>
-           <NavigationBar/>
+          <div>
+            <MainLayout />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/Home" component={Home} />
-              {/* <Route path="/Product" component={Product} />
-              <Route path="/Mycart" component={Mycart} />
-              <Route path="/News" component={News} />
-              <Route path="/Promotion" component={Promotion} />
-              <Route path="/ResultsSearch" component={ResultsSearch} />
-              <Route path="/ProductDetail/:id" component={ProductDetail} /> */}
+              {/* <Route path="/ProductDetail/:id" component={ProductDetail} />  */}
+              <Route component={Notfound404} />
             </Switch>
           </div>
         </BrowserRouter>

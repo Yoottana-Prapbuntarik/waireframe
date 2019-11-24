@@ -35,7 +35,7 @@ class NavigationBar extends Component {
         return (
             <React.Fragment>
                 <div className="container">
-                    <Navbar className="text-center  alpha  fixed-top"  light expand="lg">
+                    <Navbar className="text-center  alpha  fixed-top"  dark expand="lg">
                         {/* <NavLink className="navbar-brand" to="/">
                             <img src={mainLogo} className="logo" alt="logo" />
                         </NavLink> */}
